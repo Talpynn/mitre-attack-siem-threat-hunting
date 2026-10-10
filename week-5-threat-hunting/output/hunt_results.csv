@@ -1,0 +1,3 @@
+timestamp,host,process_name,command_line,user,process_id,notes,matched_keywords,analyst_note
+2026-10-09T09:10:00+05:00,LAB-PC-02,powershell.exe,powershell.exe -enc SQBFAFgA,student,1003,Simulated encoded-command indicator; not executed,-enc,Investigate in context; a keyword match is not proof of malicious activity.
+2026-10-09T09:20:00+05:00,LAB-PC-03,powershell.exe,powershell.exe -Command DownloadString example.invalid,student,1005,Simulated download-related keyword; not executed,downloadstring,Investigate in context; a keyword match is not proof of malicious activity.

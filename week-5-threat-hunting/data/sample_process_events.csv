@@ -1,0 +1,7 @@
+timestamp,host,process_name,command_line,user,process_id,notes
+2026-10-09T09:00:00+05:00,LAB-PC-01,explorer.exe,explorer.exe,talpyn,1001,Normal illustrative process start
+2026-10-09T09:05:00+05:00,LAB-PC-01,powershell.exe,powershell.exe -NoProfile -Command Get-Process,talpyn,1002,Illustrative routine command
+2026-10-09T09:10:00+05:00,LAB-PC-02,powershell.exe,powershell.exe -enc SQBFAFgA,student,1003,Simulated encoded-command indicator; not executed
+2026-10-09T09:15:00+05:00,LAB-PC-02,powershell.exe,powershell.exe -Command Write-Output test,student,1004,Illustrative simple command
+2026-10-09T09:20:00+05:00,LAB-PC-03,powershell.exe,powershell.exe -Command DownloadString example.invalid,student,1005,Simulated download-related keyword; not executed
+2026-10-09T09:25:00+05:00,LAB-PC-01,cmd.exe,cmd.exe /c echo -enc,talpyn,1006,Non-PowerShell process containing keyword
