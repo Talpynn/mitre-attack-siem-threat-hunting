@@ -10,7 +10,7 @@ Some process events may show PowerShell command-line characteristics that warran
 The input was `data/sample_process_events.csv`, a simulated dataset. The Python script checks PowerShell process records for configured keywords.
 
 ## 4. Results
-Run `python scripts/hunt_powershell.py` and use the exact counts shown by your execution. The included dataset is designed to produce two matching events.
+The script processed 6 simulated process events and identified 2 matching events. One event contained the `-enc` parameter, and another contained the `DownloadString` keyword. These matches were flagged for further investigation. Since the dataset is simulated, the results demonstrate the query logic only and do not indicate a real security incident.
 
 ## 5. Interpretation
 Matches are investigation leads, not proof of compromise. The strings were included for training and were not executed. A real investigation requires context such as parent process, user, host, timestamp, and related network events.
