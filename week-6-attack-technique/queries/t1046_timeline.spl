@@ -1,0 +1,5 @@
+| inputlookup network_connections.csv
+| eval _time=strptime(_time, "%Y-%m-%dT%H:%M:%S")
+| where scenario="simulated_discovery"
+| sort 0 _time
+| table _time src_ip dest_ip dest_port protocol action
