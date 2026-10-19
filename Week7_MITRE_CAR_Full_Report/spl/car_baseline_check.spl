@@ -1,5 +1,0 @@
-| inputlookup car_network_scan.csv
-| eval event_time=strptime(timestamp, "%Y-%m-%d %H:%M:%S")
-| bin event_time span=1m
-| stats count as connections dc(dest_port) as unique_ports values(dest_port) as ports by event_time src_ip dest_ip
-| sort event_time src_ip

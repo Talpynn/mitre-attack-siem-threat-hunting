@@ -1,8 +1,0 @@
-| inputlookup car_network_scan.csv
-| eval event_time=strptime(timestamp, "%Y-%m-%d %H:%M:%S")
-| bin event_time span=1m
-| stats count as connections dc(dest_port) as unique_ports values(dest_port) as ports values(action) as actions by event_time src_ip dest_ip
-| where unique_ports >= 10
-| eval analytic_id="CAR-2021-01-001", mitre_attack="T1046 - Network Service Discovery"
-| table event_time analytic_id mitre_attack src_ip dest_ip connections unique_ports ports actions
-| sort - unique_ports
