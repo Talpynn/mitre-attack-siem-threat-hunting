@@ -202,4 +202,4 @@ The four actual screenshots are embedded above and included in `evidence/`:
 3. Course Week 7 topic: **Using MITRE CAR (Cyber Analytics Repository)** — select a CAR analytic, implement it in a SIEM, and map it to related ATT&CK techniques.
 
 ---
-*Educational lab report. The supplied CSV is synthetic; screenshots document the actual lab steps and results.*
+
