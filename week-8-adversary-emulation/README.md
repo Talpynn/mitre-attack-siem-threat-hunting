@@ -77,7 +77,7 @@ The following command was used:
 schtasks /Create /SC ONLOGON /TN "Week8-BenignTask" /TR "notepad.exe C:\Week8-Lab\training_attachment.txt" /F
 ```
 
-The task was queried and executed to verify its configuration and behavior.
+The task configuration was verified, and the task was executed during the test.
 
 After the test, the task was stopped and deleted:
 
@@ -205,7 +205,7 @@ Overall, the assignment improved understanding of adversary emulation, persisten
 
 ## 8. Evidence Screenshots
 
-The screenshots documenting the practical implementation will be added to the `screenshots` directory.
+The screenshots documenting the practical implementation have been uploaded to the `evidence/screenshots` directory.
 
 The evidence includes:
 
@@ -215,3 +215,4 @@ The evidence includes:
 - Successful HTTP transfer response from Windows.
 - Kali Linux receiving 68 bytes.
 - Verification of the received test file.
+- Splunk search results for relevant Windows Security events.
